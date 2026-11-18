@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+/* Header */
+header {
+	background-image: url("images/desktop/image-hero.jpg");
+	padding: 50px 0px;
+	background-size: cover;
+}
+
+header > div {
+	width: 80%;
+	margin: auto;
+}
+
+
+
+nav ul, #nav-ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+nav ul li, #nav-ul li {
+	float: left;
+}
+
+nav ul li a, #nav-ul li a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px 0px;
+	margin: 0px 15px;
+	color: hsl(0, 0%, 100%);
+}
+
+
+
+header #immersive {
+	padding: 25px;
+	font-size: 3rem;
+	border: 2px solid hsl(0, 0%, 100%);
+	color: hsl(0, 0%, 100%);
+	max-width: 500px;
+	margin: 50px 10%;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+nav#desktop a:hover, #nav-ul li a:hover {
+	background-image: linear-gradient(hsl(0, 0%, 100%),hsl(0, 0%, 100%) );
+	background-size: 50% 3px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+nav#mobile {
+	background-color: hsl(0, 0%, 0%);
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0px;
+	left: 0px;
+	padding: 40px 20px;
+}
+
+nav#mobile ul {
+	margin-top: 50px;
+}
+
+nav#mobile li {
+	float: none;
+}
+
+nav#mobile a {
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 0px;
+}
+	#humburger {
+		display: none;
+	}
+
+nav#mobile, #hamburger {
+	display: none;
+}
+
+/*Main */
+
+/* First section */
+main > section {
+	width: 80%;
+	margin: 100px auto;
+}
+
+main > section.interactive-vr {
+	align-items: flex-end;
+}
+
+main > section.interactive-vr img {
+	width: 60%;
+}
+
+main > section.interactive-vr div {
+	background-color: hsl(0, 0%, 100%);
+	width: 50%;
+	margin-left: -10%;
+	padding: 40px;
+}
+
+main > section.interactive-vr div h1 {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin: 15px 0px;
+}
+
+main > section.interactive-vr div p {
+	color: hsl(0, 0%, 55%);
+}
+
+/* second section */
+#creations-header {
+	margin: 20px 0px;
+}
+
+#creations-header h1 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 2rem;
+}
+
+#creations-header a,#mobile-see-all {
+	border: 2px solid hsl(0, 0%, 41%);
+	color: hsl(0, 0%, 0%);
+	text-decoration: none;
+	padding: 5px 25px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: "Alata", sans-serif;
+	letter-spacing: 2px;
+}
+
+#mobile-see-all {
+	display: none;
+}
+
+#creations-container {
+	flex-wrap: wrap;
+}
+
+#creations-container > article {
+	height: 400px;
+	width: 23%;
+	min-width: 200px;
+	background-color: blue;
+	margin: 15px 0px;
+	background-size: cover;
+	cursor:pointer;
+}
+
+#creations-container > article div {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	height: inherit;
+	padding: 20px;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: hsl(0, 0%, 100%);
+	background-color: hsla(0, 0%, 0%, 0.3);
+	transition:background-color 0.5s;
+}
+#creations-container > article:hover div {
+	color:hsl(0,0%,0%);
+	background-color:hsla(0,0%,100%,0.5);
+}
+
+#deep-earth {
+	background-image: url("images/desktop/image-deep-earth.jpg")
+}
+
+#night-arcade {
+	background-image: url("images/desktop/image-night-arcade.jpg")
+}
+
+#soccer-team {
+	background-image: url("images/desktop/image-soccer-team.jpg")
+}
+
+#the-greed {
+	background-image: url("images/desktop/image-grid.jpg")
+}
+
+#form-up {
+	background-image: url("images/desktop/image-from-above.jpg")
+}
+
+#pocket-borealis {
+	background-image: url("images/desktop/image-pocket-borealis.jpg")
+}
+
+#curiosity {
+	background-image: url("images/desktop/image-curiosity.jpg")
+}
+
+#fisheye {
+	background-image: url("images/desktop/image-fisheye.jpg")
+}
+
+/* footer */
+
+footer {
+	background-color: hsl(0, 0%, 0%);
+	color: hsl(0, 0%, 100%);
+	padding: 50px 0px;
+}
+
+footer > div {
+	width: 80%;
+	margin: auto;
+}
+
+nav-ul li a:first-child {
+	margin-left: 0px;
+}
+
+footer > div p {
+	font-size: 0.9rem;
+	color: hsl(0, 0%, 55%);   
+}
+
+footer img[src*="icon"] {
+	padding: 5px 0px;
+	margin: 0px 5px;
+}
+
+footer img[src*="icon"]:hover {
+	border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 900px) {
+	section.interactive-vr div h1 {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	nav#desktop {
+		display: none;
+	}
+	#humburger {
+		display: inline-block;
+	}
+	header > div {
+		width: 90%;
+	}
+	header #immersive {
+		margin: 50px 5%;
+	}
+	main > section {
+		width: 90%;
+	}
+	section.interactive-vr {
+		flex-direction: column;
+	}
+	
+	section.interactive-vr > * {
+		width: 100%;
+	}
+	
+	main > section.interactive-vr img,main > section.interactive-vr div {
+		width: 100%;
+		margin-left: 0px;
+		text-align: center;
+	}
+	#creations-header h1 {
+		text-align: center;
+	}
+	#creations-header a{
+		display: none;
+	}
+	#mobile-see-all {
+		display:inline-block;
+	}
+	
+	#creations-container {
+		flex-direction: column;
+	}
+	#creations-container > article {
+		width: 100%;
+		height: 240px;
+	}
+	
+	#deep-earth {
+	background-image: url("images/mobile/image-deep-earth.jpg")
+}
+
+#night-arcade {
+	background-image: url("images/mobile/image-night-arcade.jpg");
+}
+
+#soccer-team {
+	background-image: url("images/mobile/image-soccer-team.jpg");
+}
+
+#the-greed {
+	background-image: url("images/mobile/image-grid.jpg");
+}
+
+#form-up {
+	background-image: url("images/mobile/image-from-above.jpg");
+}
+
+#pocket-borealis {
+	background-image: url("images/mobile/image-pocket-borealis.jpg");
+}
+
+#curiosity {
+	background-image: url("images/mobile/image-curiosity.jpg");
+}
+
+#fisheye {
+	background-image: url("images/mobile/image-fisheye.jpg");
+}
+
+	footer .flex {
+		flex-direction:column;
+		justify-content: center;
+		margin: 20px auto;
+	}
+	footer .flex > * {
+		margin: 20px auto;
+	}
+	#nav-ul li {
+		float: none;
+		text-align: center;
+	}
+
+}
+	#see-all:hover {
+		background-color:black;
+		color:white;
+		transition:0.5s;
+	}
+
+    /* #soccer-team:hover { */
+      /* filter: contrast(0.5); /* Reduced contrast on hover */ */
+    /* } */
+    /* #deep-earth:hover { */
+      /* filter: contrast(0.5); /* Reduced contrast on hover */ */
+    /* } */
+    /* #night-arcade:hover { */
+      /* filter: contrast(0.5); /* Reduced contrast on hover */ */
+    /* } */
+    /* #the-greed:hover { */
+      /* filter: contrast(0.5); /* Reduced contrast on hover */ */
+    /* } */
+    /* #form-up:hover { */
+      /* filter: contrast(0.5); /* Reduced contrast on hover */ */
+    /* } */
+    /* #pocket-borealis:hover { */
+      /* filter: contrast(0.5); /* Reduced contrast on hover */ */
+    /* } */
+    /* #curiosity:hover { */
+      /* filter: contrast(0.5); /* Reduced contrast on hover */ */
+    /* } */
+    /* #fisheye:hover { */
+      /* filter: contrast(0.5); /* Reduced contrast on hover */ */
+    /* } */
+
+

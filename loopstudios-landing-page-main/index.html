@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  
+  <title> | Loopstudios landing page</title>
+
+  
+   
+</head>
+<body>
+	<header>
+	<div class="flex interactive-vr">
+			<a href="#">
+				<img src="images/logo.svg" alt="Loopstudios logo"/>
+			</a>
+			
+			<nav id="desktop"> 
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Support</a></li>
+				</ul>
+			</nav>
+		
+		
+		<nav id="mobile">
+			<div class="flex">
+				<a href="#">
+					<img src="images/logo.svg" alt="Loopstudios logo" />
+				</a>
+				<img src="images/icon-close.svg" id="close-icon" />
+			</div>
+			<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Support</a></li>
+				</ul>
+		</nav>
+		<img src="images/icon-hamburger.svg" id="humburger"/>
+	</div>
+		<div id="immersive">Immersive experiences that deliver</div>
+	</header>
+
+	<main>
+		<section class="flex interactive-vr">
+			<img src="images/desktop/image-interactive.jpg" alt="interactive VR" />
+			<div>
+				<h1>The leader in interactive VR</h1>
+				<p>Founded in 2011, Loopstudios has been producing world-class virtual reality  
+				   projects for some of the best companies around the globe. Our award-winning  
+				   creations have transformed businesses through digital experiences that bind 
+				   to their brand.
+				</p>
+			</div>
+		</section>
+		
+		<section class="creations">
+			<div class="flex" id="creations-header">
+				<h1>Our creations</h1>
+				<a href="#" id ="see-all">See all</a>
+			</div>
+			
+			<div class="flex" id="creations-container"> 
+				<article id="deep-earth">
+					<div>
+						<p> Green Earth</p>
+					</div>
+				</article>
+				<article id="night-arcade">
+					<div>
+						<p> Night arcade</p>
+					</div>
+				</article>
+				<article id="soccer-team">
+					<div>
+						<p>Soccer team VR</p>
+					</div>
+				</article>
+				<article id="the-greed">
+					<div>
+						<p>The <br>grid</p>
+					</div>
+				</article>
+				<article id="form-up">
+					<div>
+						<p> From up above VR</p>
+					</div>
+				</article>
+				<article id="pocket-borealis">
+					<div>
+						<p> Pocket borealis</p>
+					</div>
+				</article>
+				<article id="curiosity">
+					<div>
+						<p> The curiosity</p>
+					</div>
+				</article>
+				<article id="fisheye">
+					<div>
+						<p>Make it fisheye</p>
+					</div>
+				</article>
+				<a href="#" id="mobile-see-all">See all</a>
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+	<div class="flex">
+			<img src="images/logo.svg" alt="Loopstudios" />
+		<div>
+			<img src="images/icon-facebook.svg" alt="facebook" />
+			<img src="images/icon-twitter.svg" alt="twitter" />
+			<img src="images/icon-pinterest.svg" alt="pinterest" />
+			<img src="images/icon-instagram.svg" alt="instagram" />
+		</div>
+	</div>
+		
+		<div class="flex">
+			<ul id="nav-ul">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Support</a></li>
+			</ul>
+			
+			<p>© 2021 Loopstudios. All rights reserved.</p>
+		</div>
+	</footer>
+	
+	<script>
+		const closeIcon = document.getElementById("close-icon");
+		const harmburger  = document.getElementById("humburger");
+		const mobileNav = document.querySelector("nav#mobile");
+		
+		harmburger.onclick = function() {
+			mobileNav.style.display = "block";
+		}
+		
+		closeIcon.onclick = function() {
+			mobileNav.style.display = "none";
+		}
+	</script>
+ </body>
+</html>
